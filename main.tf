@@ -15,6 +15,8 @@ terraform {
 
 provider "aws" {
   region = var.region
+  shared_credentials_file = "/Users/maish/.aws/credentials"
+  profile = "maisha"
 }
 
 resource "random_uuid" "randomid" {}
