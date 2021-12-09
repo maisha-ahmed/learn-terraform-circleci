@@ -9,6 +9,8 @@ terraform {
 
 provider "aws" {
   region = "us-east-1"
+  shared_credentials_file = "/Users/maish/.aws/credentials"
+  profile = "maisha"
 }
 
 resource "aws_s3_bucket" "terraform_state" {
